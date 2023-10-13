@@ -12,3 +12,15 @@ spring:
       additional-exclude: static/**,public/**
     livereload:
       enabled: true
+  profiles:
+    include: oauth
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          web: trace
+    com:
+      kakaotalk:
+        work_automation: debug
